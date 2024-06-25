@@ -11,7 +11,7 @@
                             <input type="text" id="username" formControlName="username" class="form-control"
                                 [ngClass]="{'is-invalid': loginForm.get('username')?.invalid && loginForm.get('username')?.touched}" />
                             <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched"
-                                class="text-danger">
+                                class="text-danger">{{um.user.required|pipe}}
                                 Username is required.
                             </div>
                         </div>
