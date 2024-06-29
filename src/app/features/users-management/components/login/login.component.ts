@@ -12,7 +12,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 })
 export class LoginComponent {
 
-  loginForm: FormGroup;
+  public loginForm: FormGroup;
 
   constructor() {
     this.loginForm = new FormGroup({
